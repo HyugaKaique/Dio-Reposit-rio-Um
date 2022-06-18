@@ -1,2 +1,2 @@
-# Dio-Reposit-rio-Um
+# Dio-Reposit-Um
 Desafio git\gitHub da Dio
