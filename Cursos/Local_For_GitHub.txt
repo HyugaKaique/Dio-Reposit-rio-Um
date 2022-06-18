@@ -1,0 +1,82 @@
+1-clonar o arquivo
+	-copiar o link do arquivo do GitHub
+	-abrir o gitBash na pasta que ficará o arquivo 
+	-usar o comando ( git clone link do arquivo)
+	-usar comando (cd nomeRepositório)
+	-usar comando (git status)
+
+2-adicionando arquivo
+	-usar comando (git add .)
+	-usar comando (git commit -m "comentário"
+	-usar comando (git status)
+	-git push origin main
+
+3-código usado para fazer isso
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto
+$ git clone https://github.com/HyugaKaique/Dio-Reposit-rio-Um.git
+Cloning into 'Dio-Reposit-rio-Um'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto
+$ cd Dio-Reposit-rio-Um/
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Cursos/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git add .
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Cursos/Teste.txt
+
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git commit -m "Incluindo arquivo local para o github"
+[main a49c70e] Incluindo arquivo local para o github
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Cursos/Teste.txt
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dell@DESKTOP-0K63435 MINGW64 /c/workspace/PrimeiroProjeto/Dio-Reposit-rio-Um (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 351 bytes | 351.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HyugaKaique/Dio-Reposit-rio-Um.git
+   1ee8679..a49c70e  main -> main
